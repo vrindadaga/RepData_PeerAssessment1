@@ -27,7 +27,7 @@
 
   <meta name="viewport" content="width=device-width">
   
-  <title>datasciencecoursera/PA1_template.Rmd at master · dchen71/datasciencecoursera</title>
+  <title>datasciencecoursera/p1.R at master · dchen71/datasciencecoursera</title>
   <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
   <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
   <meta property="fb:app_id" content="1401488693436528">
@@ -36,10 +36,10 @@
     <meta content="https://avatars3.githubusercontent.com/u/4143686?v=4&amp;s=400" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="dchen71/datasciencecoursera" property="og:title" /><meta content="https://github.com/dchen71/datasciencecoursera" property="og:url" /><meta content="datasciencecoursera - Leek Datasharing" property="og:description" />
 
   <link rel="assets" href="https://assets-cdn.github.com/">
-  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MjA1Njc0MzM2OjJkYjhiY2E1MGQzYTk4YzZlMGQxZmZkZGYyMmE2MDUyZDcwMGQ4N2E0NmY0OGJjNTNiNDM4NTQ2ZjQ0ODRjNzY=--75c47e4b2ef9b653fc0804ffd0edbf5706eb1a78">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MjA1Njc0MzM2OjZiZDk0NWExMTEwZGY3OThiNGQyZTU2MGY4ZTEzMDI1ZDhlMmM2MDFhNjg3OWU4NjZjMjhjOGM3MDFhYmM4ZTU=--30d755b0e6ce71435fc3d7ef6d27e14229f7150a">
   <meta name="pjax-timeout" content="1000">
   <link rel="sudo-modal" href="/sessions/sudo_modal">
-  <meta name="request-id" content="37B8:3DE7:23CF862:3D75C2D:59B9FCEC" data-pjax-transient>
+  <meta name="request-id" content="37B8:3DE7:23CEEE7:3D74B6C:59B9FCD2" data-pjax-transient>
   
 
   <meta name="selected-link" value="repo_source" data-pjax-transient>
@@ -48,7 +48,7 @@
 <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
     <meta name="google-analytics" content="UA-3769691-2">
 
-<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url" /><meta content="37B8:3DE7:23CF862:3D75C2D:59B9FCEC" name="octolytics-dimension-request_id" /><meta content="iad" name="octolytics-dimension-region_edge" /><meta content="iad" name="octolytics-dimension-region_render" /><meta content="26240926" name="octolytics-actor-id" /><meta content="aniket-sarkar-tcs" name="octolytics-actor-login" /><meta content="361c3134f9ac39abcd1cb782f14b05a96ca9f0ceb0c56a632a3f44f059183427" name="octolytics-actor-hash" />
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url" /><meta content="37B8:3DE7:23CEEE7:3D74B6C:59B9FCD2" name="octolytics-dimension-request_id" /><meta content="iad" name="octolytics-dimension-region_edge" /><meta content="iad" name="octolytics-dimension-region_render" /><meta content="26240926" name="octolytics-actor-id" /><meta content="aniket-sarkar-tcs" name="octolytics-actor-login" /><meta content="361c3134f9ac39abcd1cb782f14b05a96ca9f0ceb0c56a632a3f44f059183427" name="octolytics-actor-hash" />
 <meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" name="analytics-location" />
 
 
@@ -63,7 +63,7 @@
   <meta name="user-login" content="aniket-sarkar-tcs">
 
       <meta name="expected-hostname" content="github.com">
-    <meta name="js-proxy-site-detection-payload" content="MzU0ODBjYzAxNjE3YTBkNGZmNjc5YWZmZTk4ODczNzdiNGJhNWRjY2E4MjdkNDliMTBjNWY3ZTZjZDIzYTc4M3x7InJlbW90ZV9hZGRyZXNzIjoiMjAyLjE0Mi42OS45NyIsInJlcXVlc3RfaWQiOiIzN0I4OjNERTc6MjNDRjg2MjozRDc1QzJEOjU5QjlGQ0VDIiwidGltZXN0YW1wIjoxNTA1MzYxMTM4LCJob3N0IjoiZ2l0aHViLmNvbSJ9">
+    <meta name="js-proxy-site-detection-payload" content="ZjU0YWM2MjgwOGY3NDdmYTFmZWM2OTIxMWFjNTE4MzBlNTJiYTA0NjMwYmUzZDM3MzFkNjAwMTJiZjZiMGVmYXx7InJlbW90ZV9hZGRyZXNzIjoiMjAyLjE0Mi42OS45NyIsInJlcXVlc3RfaWQiOiIzN0I4OjNERTc6MjNDRUVFNzozRDc0QjZDOjU5QjlGQ0QyIiwidGltZXN0YW1wIjoxNTA1MzYxMTE1LCJob3N0IjoiZ2l0aHViLmNvbSJ9">
 
     <meta name="enabled-features" content="UNIVERSE_BANNER">
 
@@ -80,7 +80,7 @@
   <meta content="4143686" name="octolytics-dimension-user_id" /><meta content="dchen71" name="octolytics-dimension-user_login" /><meta content="27462223" name="octolytics-dimension-repository_id" /><meta content="dchen71/datasciencecoursera" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="27462223" name="octolytics-dimension-repository_network_root_id" /><meta content="dchen71/datasciencecoursera" name="octolytics-dimension-repository_network_root_nwo" /><meta content="false" name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" />
 
 
-    <link rel="canonical" href="https://github.com/dchen71/datasciencecoursera/blob/master/Reproducible%20Research/Project%201/PA1_template.Rmd" data-pjax-transient>
+    <link rel="canonical" href="https://github.com/dchen71/datasciencecoursera/blob/master/Reproducible%20Research/Project%201/p1.R" data-pjax-transient>
 
 
   <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
@@ -127,7 +127,7 @@
               <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
   <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/dchen71/datasciencecoursera/search" class="js-site-search-form" data-scoped-search-url="/dchen71/datasciencecoursera/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
     <label class="form-control header-search-wrapper js-chromeless-input-container">
-        <a href="/dchen71/datasciencecoursera/blob/master/Reproducible%20Research/Project%201/PA1_template.Rmd" class="header-search-scope no-underline">This repository</a>
+        <a href="/dchen71/datasciencecoursera/blob/master/Reproducible%20Research/Project%201/p1.R" class="header-search-scope no-underline">This repository</a>
       <input type="text"
         class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable"
         data-hotkey="s"
@@ -250,7 +250,7 @@
           Settings
         </a></li>
 
-        <li><!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="logout-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="o2wbaU3E4JSowSXPZl9pwR17vTCL9hBjQG+QsI12S6wshiA7zmRvIeGR1g54kjuSLkzh6mHFGoIbklcYnBIDTg==" /></div>
+        <li><!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="logout-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="nwGisc/9SHHqEbaNIgX7bxFOiSFoRt4gqOeFZ3X3ikUQ65njTF3HxKNBRUw8yKk8InnV+4J11MHzGkLPZJPCpw==" /></div>
           <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
             Sign out
           </button>
@@ -261,7 +261,7 @@
 </ul>
 
 
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="sr-only right-0" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="SfyTOY/vFbxfC7l6dEpQISvbovuRRnAwpy/7dOJgWm7GFqhrDE+aCRZbSrtqhwJyGOz+IXt1etH80jzc8wQSjA==" /></div>
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="sr-only right-0" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="v59CHeagrA8GfpPkXfkJZKmHcd9+taZ24isd42kVEmYwdXlPZQAjuk8uYCVDNFs3mrAtBZSGrJe51tpLeHFahA==" /></div>
           <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
             Sign out
           </button>
@@ -296,7 +296,7 @@
 
         <ul class="pagehead-actions">
   <li>
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="xUp5G1Tgv7e1R/WcsZK3BjRv1mbHoWOqv+4mXPcSXNcWehvEYtamYzlsZbLyFlmKzPhdkNh2kEdQrWsW5153Ag==" /></div>      <input class="form-control" id="repository_id" name="repository_id" type="hidden" value="27462223" />
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="EgiWhsXOE+DrclQRTFHq1zKWyHiJrM94BlxGoD94Bz3BOPRZ8/gKNGdZxD8P1QRbygFDjpZ7PJXpHwvqLzQs6A==" /></div>      <input class="form-control" id="repository_id" name="repository_id" type="hidden" value="27462223" />
 
         <div class="select-menu js-menu-container js-select-menu">
           <a href="/dchen71/datasciencecoursera/subscription"
@@ -376,7 +376,7 @@
   <li>
     
   <div class="js-toggler-container js-social-container starring-container ">
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/dchen71/datasciencecoursera/unstar" class="starred" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="aUj00uwJ/HJ38GTR13PBcE37xImoHEXxos2Ya+kkGXu1SZVJrP+Adl8XrodY3HI1sHfEMXUJGe4LmSzUMysiEQ==" /></div>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/dchen71/datasciencecoursera/unstar" class="starred" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="3EQjiO75aUkYGNs6n/t7UAOnhBd/m37mXME2TsALtWgARUITrg8VTTD/EWwQVMgV/iuEr6KOIvn1lYLxGgSOAg==" /></div>
       <button
         type="submit"
         class="btn btn-sm btn-with-count js-toggler-target"
@@ -390,7 +390,7 @@
           0
         </a>
 </form>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/dchen71/datasciencecoursera/star" class="unstarred" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="1NYOYG+kfqbBg2+dDkOeqJhlupuiqR6nCl5hWWsB7OyeRrp5Xqfp3Aj+CNB8uhkjEO7gEeviyaNqptD/DK1ttA==" /></div>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/dchen71/datasciencecoursera/star" class="unstarred" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="QwNPVK641k/lkCjfe9xSFzuH0+Gr7Zm2VQezE4oWZsEJk/tNn7tBNSztT5IJJdWcswyJa+KmTrI1/wK17brnmQ==" /></div>
       <button
         type="submit"
         class="btn btn-sm btn-with-count js-toggler-target"
@@ -408,7 +408,7 @@
   </li>
 
   <li>
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/dchen71/datasciencecoursera/fork" class="btn-with-count" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="i0WWwXMfx9FhVLIgRth3j7ORZk6qv0ZJatTicuuEDSD/EFDZ4OpUZxzTuvHb7M8WxRxveAGirnE/j277kMFCpw==" /></div>
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/dchen71/datasciencecoursera/fork" class="btn-with-count" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="9y+KUh/uSTcjF2UbFTikdtvu7NRPnTG4UHqFTq9rZ1SDekxKjBvagV6QbcqIDBzvrWPl4uSA2YAFIQnH1C4o0w==" /></div>
             <button
                 type="submit"
                 class="btn btn-sm btn-with-count"
@@ -503,9 +503,9 @@
   <div class="repository-content">
 
     
-  <a href="/dchen71/datasciencecoursera/blob/57a2cce507850965661ddbd2a61c7c64a989e5c6/Reproducible%20Research/Project%201/PA1_template.Rmd" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
+  <a href="/dchen71/datasciencecoursera/blob/57a2cce507850965661ddbd2a61c7c64a989e5c6/Reproducible%20Research/Project%201/p1.R" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
 
-  <!-- blob contrib key: blob_contributors:v21:2a9322bd482f18fe4c513db241e6aaec -->
+  <!-- blob contrib key: blob_contributors:v21:4f49c2d01a8e7a7df3762585106c7d5e -->
 
   <div class="file-navigation js-zeroclipboard-container">
     
@@ -547,7 +547,7 @@
 
 
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/dchen71/datasciencecoursera/blob/gh-pages/Reproducible%20Research/Project%201/PA1_template.Rmd"
+               href="/dchen71/datasciencecoursera/blob/gh-pages/Reproducible%20Research/Project%201/p1.R"
                data-name="gh-pages"
                data-skip-pjax="true"
                rel="nofollow">
@@ -557,7 +557,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open selected"
-               href="/dchen71/datasciencecoursera/blob/master/Reproducible%20Research/Project%201/PA1_template.Rmd"
+               href="/dchen71/datasciencecoursera/blob/master/Reproducible%20Research/Project%201/p1.R"
                data-name="master"
                data-skip-pjax="true"
                rel="nofollow">
@@ -594,7 +594,7 @@
       <button aria-label="Copy file path to clipboard" class="js-zeroclipboard btn btn-sm BtnGroup-item tooltipped tooltipped-s" data-copied-hint="Copied!" type="button">Copy path</button>
     </div>
     <div class="breadcrumb js-zeroclipboard-target">
-      <span class="repo-root js-repo-root"><span class="js-path-segment"><a href="/dchen71/datasciencecoursera"><span>datasciencecoursera</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a href="/dchen71/datasciencecoursera/tree/master/Reproducible%20Research"><span>Reproducible Research</span></a></span><span class="separator">/</span><span class="js-path-segment"><a href="/dchen71/datasciencecoursera/tree/master/Reproducible%20Research/Project%201"><span>Project 1</span></a></span><span class="separator">/</span><strong class="final-path">PA1_template.Rmd</strong>
+      <span class="repo-root js-repo-root"><span class="js-path-segment"><a href="/dchen71/datasciencecoursera"><span>datasciencecoursera</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a href="/dchen71/datasciencecoursera/tree/master/Reproducible%20Research"><span>Reproducible Research</span></a></span><span class="separator">/</span><span class="js-path-segment"><a href="/dchen71/datasciencecoursera/tree/master/Reproducible%20Research/Project%201"><span>Project 1</span></a></span><span class="separator">/</span><strong class="final-path">p1.R</strong>
     </div>
   </div>
 
@@ -638,24 +638,24 @@
   <div class="file-actions">
 
     <div class="BtnGroup">
-      <a href="/dchen71/datasciencecoursera/raw/master/Reproducible%20Research/Project%201/PA1_template.Rmd" class="btn btn-sm BtnGroup-item" id="raw-url">Raw</a>
-        <a href="/dchen71/datasciencecoursera/blame/master/Reproducible%20Research/Project%201/PA1_template.Rmd" class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b">Blame</a>
-      <a href="/dchen71/datasciencecoursera/commits/master/Reproducible%20Research/Project%201/PA1_template.Rmd" class="btn btn-sm BtnGroup-item" rel="nofollow">History</a>
+      <a href="/dchen71/datasciencecoursera/raw/master/Reproducible%20Research/Project%201/p1.R" class="btn btn-sm BtnGroup-item" id="raw-url">Raw</a>
+        <a href="/dchen71/datasciencecoursera/blame/master/Reproducible%20Research/Project%201/p1.R" class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b">Blame</a>
+      <a href="/dchen71/datasciencecoursera/commits/master/Reproducible%20Research/Project%201/p1.R" class="btn btn-sm BtnGroup-item" rel="nofollow">History</a>
     </div>
 
         <a class="btn-octicon tooltipped tooltipped-nw"
-           href="github-windows://openRepo/https://github.com/dchen71/datasciencecoursera?branch=master&amp;filepath=Reproducible%20Research%2FProject%201%2FPA1_template.Rmd"
+           href="github-windows://openRepo/https://github.com/dchen71/datasciencecoursera?branch=master&amp;filepath=Reproducible%20Research%2FProject%201%2Fp1.R"
            aria-label="Open this file in GitHub Desktop"
            data-ga-click="Repository, open with desktop, type:windows">
             <svg aria-hidden="true" class="octicon octicon-device-desktop" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
         </a>
 
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/dchen71/datasciencecoursera/edit/master/Reproducible%20Research/Project%201/PA1_template.Rmd" class="inline-form js-update-url-with-hash" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="smvBcloYPOeuWxvxJt4REWe70WeE3REhiRsyqpx4JFgdFWPKbCpBJ2tbGPboFWpNjCOgoDumgzCY8qF38wkD+g==" /></div>
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/dchen71/datasciencecoursera/edit/master/Reproducible%20Research/Project%201/p1.R" class="inline-form js-update-url-with-hash" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="lmigsXb9acKNREShhZZ+PHaz8rnK1okbfMjQjuUfoGiIauxepqkxmBaOnD4UuhLM2mxlf6WwfsHd+13wGYNHJA==" /></div>
           <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
             aria-label="Fork this project and edit the file" data-hotkey="e" data-disable-with>
             <svg aria-hidden="true" class="octicon octicon-pencil" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
           </button>
-</form>        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/dchen71/datasciencecoursera/delete/master/Reproducible%20Research/Project%201/PA1_template.Rmd" class="inline-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="eCV3VCU3zAPgppPGIt+dGANJrdaRxw5CCqzOiJEZSYC7/A/EfmNQN1KG6LyazLzSqvK02VTdpfbH7paeDdy6YA==" /></div>
+</form>        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/dchen71/datasciencecoursera/delete/master/Reproducible%20Research/Project%201/p1.R" class="inline-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="Q8HPSrng3hv8SJBOba+q2yyKjhFeuqlSdBmWgFl8F0oEOAbhQSjBZgpnAaKyzVUhjwKt4f0k6YmUzfghokjWXw==" /></div>
           <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
             aria-label="Fork this project and delete the file" data-disable-with>
             <svg aria-hidden="true" class="octicon octicon-trashcan" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
@@ -663,146 +663,385 @@
 </form>  </div>
 
   <div class="file-info">
-      148 lines (120 sloc)
+      86 lines (73 sloc)
       <span class="file-info-divider"></span>
-    5.28 KB
+    3.14 KB
   </div>
 </div>
 
     
-  <div id="readme" class="readme blob instapaper_body">
-    <article class="markdown-body entry-content" itemprop="text"><table data-table-type="yaml-metadata">
-  <thead>
-  <tr>
-  <th>title</th>
 
-  <th>output</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-  <td><div>PA1_template</div></td>
-
-  <td><div>html_document</div></td>
-  </tr>
-  </tbody>
+  <div itemprop="text" class="blob-wrapper data type-r">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tr>
+        <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-v">project1</span> <span class="pl-k">=</span> <span class="pl-k">function</span>(){</td>
+      </tr>
+      <tr>
+        <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="LC2" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span>Reads the data</span></td>
+      </tr>
+      <tr>
+        <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="LC3" class="blob-code blob-code-inner js-file-line">    <span class="pl-v">data</span> <span class="pl-k">=</span> read.csv(<span class="pl-s"><span class="pl-pds">&#39;</span>activity.csv<span class="pl-pds">&#39;</span></span>)</td>
+      </tr>
+      <tr>
+        <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="LC4" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">data</span><span class="pl-k">$</span><span class="pl-v">date</span> <span class="pl-k">=</span> as.Date(<span class="pl-smi">data</span><span class="pl-k">$</span><span class="pl-smi">date</span>, <span class="pl-s"><span class="pl-pds">&quot;</span>%Y-%m-%d<span class="pl-pds">&quot;</span></span>)</td>
+      </tr>
+      <tr>
+        <td id="L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="LC5" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span>Splits the data per date</span></td>
+      </tr>
+      <tr>
+        <td id="L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="LC6" class="blob-code blob-code-inner js-file-line">    <span class="pl-v">splitDay</span> <span class="pl-k">=</span> split(<span class="pl-smi">data</span>, <span class="pl-smi">data</span><span class="pl-k">$</span><span class="pl-smi">date</span>)</td>
+      </tr>
+      <tr>
+        <td id="L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="LC7" class="blob-code blob-code-inner js-file-line">    </td>
+      </tr>
+      <tr>
+        <td id="L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="LC8" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span>Total number of steps/Median per day</span></td>
+      </tr>
+      <tr>
+        <td id="L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="LC9" class="blob-code blob-code-inner js-file-line">    <span class="pl-v">totalSteps</span> <span class="pl-k">=</span> sapply(<span class="pl-smi">splitDay</span>, <span class="pl-k">function</span>(<span class="pl-smi">x</span>) sum(<span class="pl-smi">x</span><span class="pl-k">$</span><span class="pl-smi">steps</span>))</td>
+      </tr>
+      <tr>
+        <td id="L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="LC10" class="blob-code blob-code-inner js-file-line">    <span class="pl-v">medianSteps</span> <span class="pl-k">=</span> sapply(<span class="pl-smi">splitDay</span>, <span class="pl-k">function</span>(<span class="pl-smi">x</span>) median(<span class="pl-smi">x</span><span class="pl-k">$</span><span class="pl-smi">steps</span>))</td>
+      </tr>
+      <tr>
+        <td id="L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="LC11" class="blob-code blob-code-inner js-file-line">    hist(<span class="pl-smi">totalSteps</span>,<span class="pl-v">main</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&quot;</span>Histogram of Frequency of TotalSteps/Day<span class="pl-pds">&quot;</span></span>)</td>
+      </tr>
+      <tr>
+        <td id="L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="LC12" class="blob-code blob-code-inner js-file-line">    </td>
+      </tr>
+      <tr>
+        <td id="L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="LC13" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span>Preallocate vector</span></td>
+      </tr>
+      <tr>
+        <td id="L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="LC14" class="blob-code blob-code-inner js-file-line">    <span class="pl-v">interval</span> <span class="pl-k">=</span> seq(<span class="pl-c1">0</span>,<span class="pl-c1">2355</span>,<span class="pl-c1">5</span>)</td>
+      </tr>
+      <tr>
+        <td id="L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="LC15" class="blob-code blob-code-inner js-file-line">    <span class="pl-v">steps</span> <span class="pl-k">=</span> <span class="pl-k">numeric</span>()</td>
+      </tr>
+      <tr>
+        <td id="L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="LC16" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">for</span>(<span class="pl-smi">i</span> <span class="pl-k">in</span> <span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">472</span>) {</td>
+      </tr>
+      <tr>
+        <td id="L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="LC17" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">steps</span>[<span class="pl-smi">i</span>] <span class="pl-k">=</span> <span class="pl-c1">0</span></td>
+      </tr>
+      <tr>
+        <td id="L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="LC18" class="blob-code blob-code-inner js-file-line">    }</td>
+      </tr>
+      <tr>
+        <td id="L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="LC19" class="blob-code blob-code-inner js-file-line">    <span class="pl-v">avgSteps</span> <span class="pl-k">=</span> <span class="pl-k">data.frame</span>(<span class="pl-smi">interval</span>, <span class="pl-smi">steps</span>)</td>
+      </tr>
+      <tr>
+        <td id="L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="LC20" class="blob-code blob-code-inner js-file-line">    names(<span class="pl-smi">avgSteps</span>) <span class="pl-k">=</span> c(<span class="pl-s"><span class="pl-pds">&#39;</span>interval<span class="pl-pds">&#39;</span></span>,<span class="pl-s"><span class="pl-pds">&#39;</span>avgsteps<span class="pl-pds">&#39;</span></span>)</td>
+      </tr>
+      <tr>
+        <td id="L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td id="LC21" class="blob-code blob-code-inner js-file-line">    </td>
+      </tr>
+      <tr>
+        <td id="L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td id="LC22" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span>Adds the mean data in for the 5 minute interval</span></td>
+      </tr>
+      <tr>
+        <td id="L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td id="LC23" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">for</span> (<span class="pl-smi">i</span> <span class="pl-k">in</span> <span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">472</span>){</td>
+      </tr>
+      <tr>
+        <td id="L24" class="blob-num js-line-number" data-line-number="24"></td>
+        <td id="LC24" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">avgSteps</span><span class="pl-k">$</span><span class="pl-smi">avgsteps</span>[<span class="pl-smi">i</span>] <span class="pl-k">=</span> mean(<span class="pl-smi">data</span><span class="pl-k">$</span><span class="pl-smi">steps</span>[<span class="pl-smi">data</span><span class="pl-k">$</span><span class="pl-smi">interval</span> <span class="pl-k">==</span> <span class="pl-smi">interval</span>[<span class="pl-smi">i</span>]], <span class="pl-v">na.rm</span><span class="pl-k">=</span><span class="pl-c1">TRUE</span>)</td>
+      </tr>
+      <tr>
+        <td id="L25" class="blob-num js-line-number" data-line-number="25"></td>
+        <td id="LC25" class="blob-code blob-code-inner js-file-line">    }</td>
+      </tr>
+      <tr>
+        <td id="L26" class="blob-num js-line-number" data-line-number="26"></td>
+        <td id="LC26" class="blob-code blob-code-inner js-file-line">    </td>
+      </tr>
+      <tr>
+        <td id="L27" class="blob-num js-line-number" data-line-number="27"></td>
+        <td id="LC27" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span>Plots the avgsteps vs time interval</span></td>
+      </tr>
+      <tr>
+        <td id="L28" class="blob-num js-line-number" data-line-number="28"></td>
+        <td id="LC28" class="blob-code blob-code-inner js-file-line">    plot(<span class="pl-smi">avgSteps</span>, <span class="pl-v">type</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&#39;</span>l<span class="pl-pds">&#39;</span></span>, <span class="pl-v">main</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&#39;</span>Avg. Steps over 5 minute intervals<span class="pl-pds">&#39;</span></span>,<span class="pl-v">xlab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&#39;</span>Interval(minutes)<span class="pl-pds">&#39;</span></span>,</td>
+      </tr>
+      <tr>
+        <td id="L29" class="blob-num js-line-number" data-line-number="29"></td>
+        <td id="LC29" class="blob-code blob-code-inner js-file-line">         <span class="pl-v">ylab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&#39;</span>Average Steps<span class="pl-pds">&#39;</span></span>)</td>
+      </tr>
+      <tr>
+        <td id="L30" class="blob-num js-line-number" data-line-number="30"></td>
+        <td id="LC30" class="blob-code blob-code-inner js-file-line">    </td>
+      </tr>
+      <tr>
+        <td id="L31" class="blob-num js-line-number" data-line-number="31"></td>
+        <td id="LC31" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span>Finds the interval with the highest avg</span></td>
+      </tr>
+      <tr>
+        <td id="L32" class="blob-num js-line-number" data-line-number="32"></td>
+        <td id="LC32" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">avgSteps</span><span class="pl-k">$</span><span class="pl-smi">interval</span>[which.max(<span class="pl-smi">avgSteps</span><span class="pl-k">$</span><span class="pl-smi">avgsteps</span>)]</td>
+      </tr>
+      <tr>
+        <td id="L33" class="blob-num js-line-number" data-line-number="33"></td>
+        <td id="LC33" class="blob-code blob-code-inner js-file-line">    </td>
+      </tr>
+      <tr>
+        <td id="L34" class="blob-num js-line-number" data-line-number="34"></td>
+        <td id="LC34" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span>Counts number of na values in steps</span></td>
+      </tr>
+      <tr>
+        <td id="L35" class="blob-num js-line-number" data-line-number="35"></td>
+        <td id="LC35" class="blob-code blob-code-inner js-file-line">    <span class="pl-v">numNa</span> <span class="pl-k">=</span> sum(is.na(<span class="pl-smi">data</span><span class="pl-k">$</span><span class="pl-smi">steps</span>))</td>
+      </tr>
+      <tr>
+        <td id="L36" class="blob-num js-line-number" data-line-number="36"></td>
+        <td id="LC36" class="blob-code blob-code-inner js-file-line">    </td>
+      </tr>
+      <tr>
+        <td id="L37" class="blob-num js-line-number" data-line-number="37"></td>
+        <td id="LC37" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span>Replaces NA with 0</span></td>
+      </tr>
+      <tr>
+        <td id="L38" class="blob-num js-line-number" data-line-number="38"></td>
+        <td id="LC38" class="blob-code blob-code-inner js-file-line">    <span class="pl-v">noNa</span> <span class="pl-k">=</span> <span class="pl-smi">data</span></td>
+      </tr>
+      <tr>
+        <td id="L39" class="blob-num js-line-number" data-line-number="39"></td>
+        <td id="LC39" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">noNa</span>[is.na(<span class="pl-smi">noNa</span>)]<span class="pl-k">=</span><span class="pl-c1">0</span></td>
+      </tr>
+      <tr>
+        <td id="L40" class="blob-num js-line-number" data-line-number="40"></td>
+        <td id="LC40" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span>Splits the data per date</span></td>
+      </tr>
+      <tr>
+        <td id="L41" class="blob-num js-line-number" data-line-number="41"></td>
+        <td id="LC41" class="blob-code blob-code-inner js-file-line">    <span class="pl-v">splitNa</span> <span class="pl-k">=</span> split(<span class="pl-smi">noNa</span>, <span class="pl-smi">noNa</span><span class="pl-k">$</span><span class="pl-smi">date</span>)</td>
+      </tr>
+      <tr>
+        <td id="L42" class="blob-num js-line-number" data-line-number="42"></td>
+        <td id="LC42" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span>Average steps/median</span></td>
+      </tr>
+      <tr>
+        <td id="L43" class="blob-num js-line-number" data-line-number="43"></td>
+        <td id="LC43" class="blob-code blob-code-inner js-file-line">    <span class="pl-v">totalNa</span> <span class="pl-k">=</span> sapply(<span class="pl-smi">splitNa</span>, <span class="pl-k">function</span>(<span class="pl-smi">x</span>) sum(<span class="pl-smi">x</span><span class="pl-k">$</span><span class="pl-smi">steps</span>))</td>
+      </tr>
+      <tr>
+        <td id="L44" class="blob-num js-line-number" data-line-number="44"></td>
+        <td id="LC44" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span>Plots histogram of the number of total steps per day</span></td>
+      </tr>
+      <tr>
+        <td id="L45" class="blob-num js-line-number" data-line-number="45"></td>
+        <td id="LC45" class="blob-code blob-code-inner js-file-line">    hist(<span class="pl-smi">totalNa</span>,<span class="pl-v">main</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&quot;</span>Histogram of Frequency of TotalSteps/Day<span class="pl-pds">&quot;</span></span>, <span class="pl-v">xlab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&quot;</span>Total number of Steps<span class="pl-pds">&quot;</span></span>)</td>
+      </tr>
+      <tr>
+        <td id="L46" class="blob-num js-line-number" data-line-number="46"></td>
+        <td id="LC46" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span>Average/mean across all values</span></td>
+      </tr>
+      <tr>
+        <td id="L47" class="blob-num js-line-number" data-line-number="47"></td>
+        <td id="LC47" class="blob-code blob-code-inner js-file-line">    <span class="pl-v">avgNa</span> <span class="pl-k">=</span> sapply(<span class="pl-smi">splitNa</span>, <span class="pl-k">function</span>(<span class="pl-smi">x</span>) mean(<span class="pl-smi">x</span><span class="pl-k">$</span><span class="pl-smi">steps</span>))</td>
+      </tr>
+      <tr>
+        <td id="L48" class="blob-num js-line-number" data-line-number="48"></td>
+        <td id="LC48" class="blob-code blob-code-inner js-file-line">    <span class="pl-v">medNa</span> <span class="pl-k">=</span> sapply(<span class="pl-smi">splitNa</span>, <span class="pl-k">function</span>(<span class="pl-smi">x</span>) median(<span class="pl-smi">x</span><span class="pl-k">$</span><span class="pl-smi">steps</span>))</td>
+      </tr>
+      <tr>
+        <td id="L49" class="blob-num js-line-number" data-line-number="49"></td>
+        <td id="LC49" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L50" class="blob-num js-line-number" data-line-number="50"></td>
+        <td id="LC50" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span>Shows data of weekday and weekend values</span></td>
+      </tr>
+      <tr>
+        <td id="L51" class="blob-num js-line-number" data-line-number="51"></td>
+        <td id="LC51" class="blob-code blob-code-inner js-file-line">    <span class="pl-v">weekData</span> <span class="pl-k">=</span> <span class="pl-smi">data</span></td>
+      </tr>
+      <tr>
+        <td id="L52" class="blob-num js-line-number" data-line-number="52"></td>
+        <td id="LC52" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">weekData</span>[is.na(<span class="pl-smi">weekData</span>)]<span class="pl-k">=</span><span class="pl-c1">0</span>    </td>
+      </tr>
+      <tr>
+        <td id="L53" class="blob-num js-line-number" data-line-number="53"></td>
+        <td id="LC53" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">weekData</span><span class="pl-k">$</span><span class="pl-v">days</span> <span class="pl-k">=</span> weekdays(<span class="pl-smi">weekData</span><span class="pl-k">$</span><span class="pl-smi">date</span>)</td>
+      </tr>
+      <tr>
+        <td id="L54" class="blob-num js-line-number" data-line-number="54"></td>
+        <td id="LC54" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">weekData</span><span class="pl-k">$</span><span class="pl-v">days</span> <span class="pl-k">=</span> as.factor(ifelse(weekdays(<span class="pl-smi">weekData</span><span class="pl-k">$</span><span class="pl-smi">date</span>) <span class="pl-k">%in%</span> c(<span class="pl-s"><span class="pl-pds">&quot;</span>Saturday<span class="pl-pds">&quot;</span></span>,<span class="pl-s"><span class="pl-pds">&quot;</span>Sunday<span class="pl-pds">&quot;</span></span>), </td>
+      </tr>
+      <tr>
+        <td id="L55" class="blob-num js-line-number" data-line-number="55"></td>
+        <td id="LC55" class="blob-code blob-code-inner js-file-line">                                      <span class="pl-s"><span class="pl-pds">&quot;</span>Weekend<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>Weekday<span class="pl-pds">&quot;</span></span>)) </td>
+      </tr>
+      <tr>
+        <td id="L56" class="blob-num js-line-number" data-line-number="56"></td>
+        <td id="LC56" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L57" class="blob-num js-line-number" data-line-number="57"></td>
+        <td id="LC57" class="blob-code blob-code-inner js-file-line">    <span class="pl-v">avgEnd</span> <span class="pl-k">=</span> mean(<span class="pl-smi">weekData</span><span class="pl-k">$</span><span class="pl-smi">steps</span>[<span class="pl-smi">weekData</span><span class="pl-k">$</span><span class="pl-smi">days</span> <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">&#39;</span>Weekend<span class="pl-pds">&#39;</span></span>])</td>
+      </tr>
+      <tr>
+        <td id="L58" class="blob-num js-line-number" data-line-number="58"></td>
+        <td id="LC58" class="blob-code blob-code-inner js-file-line">    <span class="pl-v">avgDay</span> <span class="pl-k">=</span> mean(<span class="pl-smi">weekData</span><span class="pl-k">$</span><span class="pl-smi">steps</span>[<span class="pl-smi">weekData</span><span class="pl-k">$</span><span class="pl-smi">days</span> <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">&#39;</span>Weekday<span class="pl-pds">&#39;</span></span>])</td>
+      </tr>
+      <tr>
+        <td id="L59" class="blob-num js-line-number" data-line-number="59"></td>
+        <td id="LC59" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L60" class="blob-num js-line-number" data-line-number="60"></td>
+        <td id="LC60" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span>Subset weekday and weekend values</span></td>
+      </tr>
+      <tr>
+        <td id="L61" class="blob-num js-line-number" data-line-number="61"></td>
+        <td id="LC61" class="blob-code blob-code-inner js-file-line">    <span class="pl-v">weekdays</span> <span class="pl-k">=</span> subset(<span class="pl-smi">weekData</span>, <span class="pl-smi">weekData</span><span class="pl-k">$</span><span class="pl-smi">days</span> <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">&#39;</span>Weekday<span class="pl-pds">&#39;</span></span>)</td>
+      </tr>
+      <tr>
+        <td id="L62" class="blob-num js-line-number" data-line-number="62"></td>
+        <td id="LC62" class="blob-code blob-code-inner js-file-line">    <span class="pl-v">weekends</span> <span class="pl-k">=</span> subset(<span class="pl-smi">weekData</span>, <span class="pl-smi">weekData</span><span class="pl-k">$</span><span class="pl-smi">days</span> <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">&#39;</span>Weekend<span class="pl-pds">&#39;</span></span>)</td>
+      </tr>
+      <tr>
+        <td id="L63" class="blob-num js-line-number" data-line-number="63"></td>
+        <td id="LC63" class="blob-code blob-code-inner js-file-line">    </td>
+      </tr>
+      <tr>
+        <td id="L64" class="blob-num js-line-number" data-line-number="64"></td>
+        <td id="LC64" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span>Preallocate vector</span></td>
+      </tr>
+      <tr>
+        <td id="L65" class="blob-num js-line-number" data-line-number="65"></td>
+        <td id="LC65" class="blob-code blob-code-inner js-file-line">    <span class="pl-v">weekend</span> <span class="pl-k">=</span> <span class="pl-k">numeric</span>()</td>
+      </tr>
+      <tr>
+        <td id="L66" class="blob-num js-line-number" data-line-number="66"></td>
+        <td id="LC66" class="blob-code blob-code-inner js-file-line">    <span class="pl-v">weekday</span> <span class="pl-k">=</span> <span class="pl-k">numeric</span>()</td>
+      </tr>
+      <tr>
+        <td id="L67" class="blob-num js-line-number" data-line-number="67"></td>
+        <td id="LC67" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">for</span>(<span class="pl-smi">i</span> <span class="pl-k">in</span> <span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">472</span>) {</td>
+      </tr>
+      <tr>
+        <td id="L68" class="blob-num js-line-number" data-line-number="68"></td>
+        <td id="LC68" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">weekday</span>[<span class="pl-smi">i</span>] <span class="pl-k">=</span> <span class="pl-c1">0</span></td>
+      </tr>
+      <tr>
+        <td id="L69" class="blob-num js-line-number" data-line-number="69"></td>
+        <td id="LC69" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">weekend</span>[<span class="pl-smi">i</span>] <span class="pl-k">=</span> <span class="pl-c1">0</span></td>
+      </tr>
+      <tr>
+        <td id="L70" class="blob-num js-line-number" data-line-number="70"></td>
+        <td id="LC70" class="blob-code blob-code-inner js-file-line">    }</td>
+      </tr>
+      <tr>
+        <td id="L71" class="blob-num js-line-number" data-line-number="71"></td>
+        <td id="LC71" class="blob-code blob-code-inner js-file-line">    <span class="pl-v">avgWeek</span> <span class="pl-k">=</span> <span class="pl-k">data.frame</span>(<span class="pl-smi">interval</span>, <span class="pl-smi">weekend</span>, <span class="pl-smi">weekday</span>)</td>
+      </tr>
+      <tr>
+        <td id="L72" class="blob-num js-line-number" data-line-number="72"></td>
+        <td id="LC72" class="blob-code blob-code-inner js-file-line">    names(<span class="pl-smi">avgWeek</span>) <span class="pl-k">=</span> c(<span class="pl-s"><span class="pl-pds">&#39;</span>interval<span class="pl-pds">&#39;</span></span>,<span class="pl-s"><span class="pl-pds">&#39;</span>avgsteps.weekend<span class="pl-pds">&#39;</span></span>,<span class="pl-s"><span class="pl-pds">&#39;</span>avgsteps.weekday<span class="pl-pds">&#39;</span></span>)</td>
+      </tr>
+      <tr>
+        <td id="L73" class="blob-num js-line-number" data-line-number="73"></td>
+        <td id="LC73" class="blob-code blob-code-inner js-file-line">    </td>
+      </tr>
+      <tr>
+        <td id="L74" class="blob-num js-line-number" data-line-number="74"></td>
+        <td id="LC74" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span>Adds the mean data in for the 5 minute interval</span></td>
+      </tr>
+      <tr>
+        <td id="L75" class="blob-num js-line-number" data-line-number="75"></td>
+        <td id="LC75" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">for</span> (<span class="pl-smi">i</span> <span class="pl-k">in</span> <span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">472</span>){</td>
+      </tr>
+      <tr>
+        <td id="L76" class="blob-num js-line-number" data-line-number="76"></td>
+        <td id="LC76" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">avgWeek</span><span class="pl-k">$</span><span class="pl-smi">avgsteps.weekday</span>[<span class="pl-smi">i</span>] <span class="pl-k">=</span> mean(<span class="pl-smi">weekdays</span><span class="pl-k">$</span><span class="pl-smi">steps</span>[<span class="pl-smi">weekdays</span><span class="pl-k">$</span><span class="pl-smi">interval</span> <span class="pl-k">==</span> <span class="pl-smi">interval</span>[<span class="pl-smi">i</span>]], <span class="pl-v">na.rm</span><span class="pl-k">=</span><span class="pl-c1">TRUE</span>)</td>
+      </tr>
+      <tr>
+        <td id="L77" class="blob-num js-line-number" data-line-number="77"></td>
+        <td id="LC77" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">avgWeek</span><span class="pl-k">$</span><span class="pl-smi">avgsteps.weekend</span>[<span class="pl-smi">i</span>] <span class="pl-k">=</span> mean(<span class="pl-smi">weekends</span><span class="pl-k">$</span><span class="pl-smi">steps</span>[<span class="pl-smi">weekends</span><span class="pl-k">$</span><span class="pl-smi">interval</span> <span class="pl-k">==</span> <span class="pl-smi">interval</span>[<span class="pl-smi">i</span>]], <span class="pl-v">na.rm</span><span class="pl-k">=</span><span class="pl-c1">TRUE</span>)</td>
+      </tr>
+      <tr>
+        <td id="L78" class="blob-num js-line-number" data-line-number="78"></td>
+        <td id="LC78" class="blob-code blob-code-inner js-file-line">    }</td>
+      </tr>
+      <tr>
+        <td id="L79" class="blob-num js-line-number" data-line-number="79"></td>
+        <td id="LC79" class="blob-code blob-code-inner js-file-line">    </td>
+      </tr>
+      <tr>
+        <td id="L80" class="blob-num js-line-number" data-line-number="80"></td>
+        <td id="LC80" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span>Creates the plots</span></td>
+      </tr>
+      <tr>
+        <td id="L81" class="blob-num js-line-number" data-line-number="81"></td>
+        <td id="LC81" class="blob-code blob-code-inner js-file-line">    par(<span class="pl-v">mfrow</span><span class="pl-k">=</span>c(<span class="pl-c1">2</span>,<span class="pl-c1">1</span>))</td>
+      </tr>
+      <tr>
+        <td id="L82" class="blob-num js-line-number" data-line-number="82"></td>
+        <td id="LC82" class="blob-code blob-code-inner js-file-line">    plot(<span class="pl-smi">avgWeek</span><span class="pl-k">$</span><span class="pl-smi">interval</span>, <span class="pl-smi">avgWeek</span><span class="pl-k">$</span><span class="pl-smi">avgsteps.weekend</span>, <span class="pl-v">type</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&#39;</span>l<span class="pl-pds">&#39;</span></span>, <span class="pl-v">main</span> <span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&quot;</span>Weekend vs Avg Steps<span class="pl-pds">&quot;</span></span>,</td>
+      </tr>
+      <tr>
+        <td id="L83" class="blob-num js-line-number" data-line-number="83"></td>
+        <td id="LC83" class="blob-code blob-code-inner js-file-line">         <span class="pl-v">xlab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&quot;</span>Interval(steps)<span class="pl-pds">&quot;</span></span>, <span class="pl-v">ylab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&quot;</span>Average Steps<span class="pl-pds">&quot;</span></span>)</td>
+      </tr>
+      <tr>
+        <td id="L84" class="blob-num js-line-number" data-line-number="84"></td>
+        <td id="LC84" class="blob-code blob-code-inner js-file-line">    plot(<span class="pl-smi">avgWeek</span><span class="pl-k">$</span><span class="pl-smi">interval</span>, <span class="pl-smi">avgWeek</span><span class="pl-k">$</span><span class="pl-smi">avgsteps.weekday</span>, <span class="pl-v">main</span> <span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&quot;</span>Weekday vs Avg Steps<span class="pl-pds">&quot;</span></span>, </td>
+      </tr>
+      <tr>
+        <td id="L85" class="blob-num js-line-number" data-line-number="85"></td>
+        <td id="LC85" class="blob-code blob-code-inner js-file-line">         <span class="pl-v">xlab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&quot;</span>Interval(steps)<span class="pl-pds">&quot;</span></span>, <span class="pl-v">ylab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&quot;</span>Average Steps<span class="pl-pds">&quot;</span></span>, <span class="pl-v">type</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&#39;</span>l<span class="pl-pds">&#39;</span></span>)</td>
+      </tr>
+      <tr>
+        <td id="L86" class="blob-num js-line-number" data-line-number="86"></td>
+        <td id="LC86" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
 </table>
 
-<p>###Introduction</p>
-<p>It is now possible to collect a large amount of data about personal movement using activity monitoring devices such as a Fitbit, Nike Fuelband, or Jawbone Up. These type of devices are part of the "quantified self" movement -- a group of enthusiasts who take measurements about themselves regularly to improve their health, to find patterns in their behavior, or because they are tech geeks. But these data remain under-utilized both because the raw data are hard to obtain and there is a lack of statistical methods and software for processing and interpreting the data.</p>
-<p>This assignment makes use of data from a personal activity monitoring device. This device collects data at 5 minute intervals through out the day. The data consists of two months of data from an anonymous individual collected during the months of October and November, 2012 and include the number of steps taken in 5 minute intervals each day.</p>
-<p>###Loading and preprocessing the data
-This part of the code is necessary for the inital loading of the dataset</p>
-<pre lang="{r}"><code>    #Reads the data
-    data = read.csv('activity.csv')
-    data$date = as.Date(data$date, "%Y-%m-%d")
-    #Splits the data per date
-    splitDay = split(data, data$date)
-</code></pre>
-<p>###What is mean total number of steps taken per day?</p>
-<pre lang="{r}"><code>    #Total number of steps/Median per day
-    totalSteps = sapply(splitDay, function(x) sum(x$steps))
-    medianSteps = sapply(splitDay, function(x) median(x$steps))
-    hist(totalSteps,main="Histogram of Frequency of TotalSteps/Day")
-</code></pre>
-<p>Total number of steps/day</p>
-<pre lang="{r,"><code>    totalSteps
+  <div class="BlobToolbar position-absolute js-file-line-actions dropdown js-menu-container js-select-menu d-none" aria-hidden="true">
+    <button class="btn-octicon ml-0 px-2 p-0 bg-white border border-gray-dark rounded-1 dropdown-toggle js-menu-target" id="js-file-line-action-button" type="button" aria-expanded="false" aria-haspopup="true" aria-label="Inline file action toolbar" aria-controls="inline-file-actions">
+      <svg aria-hidden="true" class="octicon" height="16" version="1.1" viewBox="0 0 13 4" width="14">
+        <g stroke="none" stroke-width="1" fill-rule="evenodd">
+            <g transform="translate(-1.000000, -6.000000)">
+                <path d="M2.5,9.5 C1.67157288,9.5 1,8.82842712 1,8 C1,7.17157288 1.67157288,6.5 2.5,6.5 C3.32842712,6.5 4,7.17157288 4,8 C4,8.82842712 3.32842712,9.5 2.5,9.5 Z M7.5,9.5 C6.67157288,9.5 6,8.82842712 6,8 C6,7.17157288 6.67157288,6.5 7.5,6.5 C8.32842712,6.5 9,7.17157288 9,8 C9,8.82842712 8.32842712,9.5 7.5,9.5 Z M12.5,9.5 C11.6715729,9.5 11,8.82842712 11,8 C11,7.17157288 11.6715729,6.5 12.5,6.5 C13.3284271,6.5 14,7.17157288 14,8 C14,8.82842712 13.3284271,9.5 12.5,9.5 Z"></path>
+            </g>
+        </g>
+      </svg>
+    </button>
+    <div class="dropdown-menu-content js-menu-content" id="inline-file-actions">
+      <ul class="BlobToolbar-dropdown dropdown-menu dropdown-menu-se mt-2">
+        <li><a class="js-zeroclipboard dropdown-item" style="cursor:pointer;" id="js-copy-lines" data-original-text="Copy lines">Copy lines</a></li>
+        <li><a class="js-zeroclipboard dropdown-item" id= "js-copy-permalink" style="cursor:pointer;" data-original-text="Copy permalink">Copy permalink</a></li>
+        <li><a href="/dchen71/datasciencecoursera/blame/57a2cce507850965661ddbd2a61c7c64a989e5c6/Reproducible%20Research/Project%201/p1.R" class="dropdown-item js-update-url-with-hash" id="js-view-git-blame">View git blame</a></li>
+          <li><a href="/dchen71/datasciencecoursera/issues/new" class="dropdown-item" id="js-new-issue">Open new issue</a></li>
+      </ul>
+    </div>
+  </div>
 
-</code></pre>
-<p>Median number of steps/day</p>
-<pre lang="{r,"><code>
-    medianSteps
-</code></pre>
-<p>###What is the average daily activity pattern?
-The code initializes the dataset and creates a plot to find the average steps vs time interval</p>
-<pre lang="{r}"><code>    #Preallocate vector
-    interval = seq(0,2355,5)
-    steps = numeric()
-    for(i in 1:472) {
-        steps[i] = 0
-    }
-    avgSteps = data.frame(interval, steps)
-    names(avgSteps) = c('interval','avgsteps')
-    
-    #Adds the mean data in for the 5 minute interval
-    for (i in 1:472){
-        avgSteps$avgsteps[i] = mean(data$steps[data$interval == interval[i]], na.rm=TRUE)
-    }
-    
-    #Plots the avgsteps vs time interval
-    plot(avgSteps, type='l', main='Avg. Steps over 5 minute intervals',xlab='Interval(minutes)',
-         ylab='Average Steps')
-    
-    #Finds the interval with the highest avg
-    avgSteps$interval[which.max(avgSteps$avgsteps)]
-</code></pre>
-<p>The interval with the highest average is <code>r avgSteps$interval[which.max(avgSteps$avgsteps)]</code></p>
-<p>##Imputing missing values</p>
-<pre lang="{r}"><code>    #Counts number of na values in steps
-    numNa = sum(is.na(data$steps))
-</code></pre>
-<p>The number of NA values in the dataset is <code>r numNa</code></p>
-<p>All NA values will be replaced with 0</p>
-<pre lang="{r}"><code>    #Replaces NA with 0
-    noNa = data
-    noNa[is.na(noNa)]=0
-    #Splits the data per date
-    splitNa = split(noNa, noNa$date)
-    #Average steps/median
-    totalNa = sapply(splitNa, function(x) sum(x$steps))
-    #Plots histogram of the number of total steps per day
-    hist(totalNa,main="Histogram of Frequency of TotalSteps/Day", xlab="Total number of Steps")
-    #Average/mean across all values
-    avgNa = sapply(splitNa, function(x) mean(x$steps))
-    medNa = sapply(splitNa, function(x) median(x$steps))
-</code></pre>
-<p>The following is the adjusted average values after changing all NA values to 0</p>
-<pre lang="{r,"><code>    avgNa
-</code></pre>
-<p>The following is the adjusted median values after chaning all NA values to 0</p>
-<pre lang="{r,"><code>    medNa
-</code></pre>
-<p>###Are there differences in activity patterns between weekdays and weekends?</p>
-<p>The following creates subsets containing the weekday/weekend values of the dataset</p>
-<pre lang="{r}"><code>    #Shows data of weekday and weekend values
-    weekData = data
-    weekData[is.na(weekData)]=0    
-    weekData$days = weekdays(weekData$date)
-    weekData$days = as.factor(ifelse(weekdays(weekData$date) %in% c("Saturday","Sunday"), 
-                                      "Weekend", "Weekday")) 
-
-    avgEnd = mean(weekData$steps[weekData$days == 'Weekend'])
-    avgDay = mean(weekData$steps[weekData$days == 'Weekday'])
-
-    #Subset weekday and weekend values
-    weekdays = subset(weekData, weekData$days == 'Weekday')
-    weekends = subset(weekData, weekData$days == 'Weekend')
-    
-    #Preallocate vector
-    weekend = numeric()
-    weekday = numeric()
-    for(i in 1:472) {
-        weekday[i] = 0
-        weekend[i] = 0
-    }
-    avgWeek = data.frame(interval, weekend, weekday)
-    names(avgWeek) = c('interval','avgsteps.weekend','avgsteps.weekday')
-    
-    #Adds the mean data in for the 5 minute interval
-    for (i in 1:472){
-        avgWeek$avgsteps.weekday[i] = mean(weekdays$steps[weekdays$interval == interval[i]], na.rm=TRUE)
-        avgWeek$avgsteps.weekend[i] = mean(weekends$steps[weekends$interval == interval[i]], na.rm=TRUE)
-    }
-</code></pre>
-<p>The plot is setup to show the differences in the average steps vs time period between weekends and weekdays</p>
-<pre lang="{r}"><code>    #Creates the plots
-    par(mfrow=c(2,1))
-    plot(avgWeek$interval, avgWeek$avgsteps.weekend, type='l', main ="Weekend vs Avg Steps",
-         xlab="Interval(steps)", ylab="Average Steps")
-    plot(avgWeek$interval, avgWeek$avgsteps.weekday, main ="Weekday vs Avg Steps", 
-         xlab="Interval(steps)", ylab="Average Steps", type='l')
-</code></pre>
-</article>
   </div>
 
   </div>
@@ -827,7 +1066,7 @@ The code initializes the dataset and creates a plot to find the average steps vs
 <div class="footer container-lg px-3" role="contentinfo">
   <div class="position-relative d-flex flex-justify-between py-6 mt-6 f6 text-gray border-top border-gray-light ">
     <ul class="list-style-none d-flex flex-wrap ">
-      <li class="mr-3">&copy; 2017 <span title="0.18152s from unicorn-2162599231-nc3g0">GitHub</span>, Inc.</li>
+      <li class="mr-3">&copy; 2017 <span title="0.14888s from unicorn-989893024-m6ms0">GitHub</span>, Inc.</li>
         <li class="mr-3"><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
         <li class="mr-3"><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
         <li class="mr-3"><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>

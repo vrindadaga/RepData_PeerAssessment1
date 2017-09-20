@@ -27,7 +27,7 @@
 
   <meta name="viewport" content="width=device-width">
   
-  <title>datasciencecoursera/PA1_template.Rmd at master · dchen71/datasciencecoursera</title>
+  <title>datasciencecoursera/PA1_template.md at master · dchen71/datasciencecoursera</title>
   <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
   <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
   <meta property="fb:app_id" content="1401488693436528">
@@ -36,10 +36,10 @@
     <meta content="https://avatars3.githubusercontent.com/u/4143686?v=4&amp;s=400" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="dchen71/datasciencecoursera" property="og:title" /><meta content="https://github.com/dchen71/datasciencecoursera" property="og:url" /><meta content="datasciencecoursera - Leek Datasharing" property="og:description" />
 
   <link rel="assets" href="https://assets-cdn.github.com/">
-  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MjA1Njc0MzM2OjJkYjhiY2E1MGQzYTk4YzZlMGQxZmZkZGYyMmE2MDUyZDcwMGQ4N2E0NmY0OGJjNTNiNDM4NTQ2ZjQ0ODRjNzY=--75c47e4b2ef9b653fc0804ffd0edbf5706eb1a78">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MjA1Njc0MzM2OjQ0ZjNkYWVlMzE4YTBhYzQzZDUyNzVkZjhhMzI0MzdjN2RlYmNlMzJjYTIzNTljYmZjZDFmYmRhYzRlYzI1NjE=--feb2310891b83c63eedae9ab1ac426a063bf6936">
   <meta name="pjax-timeout" content="1000">
   <link rel="sudo-modal" href="/sessions/sudo_modal">
-  <meta name="request-id" content="37B8:3DE7:23CF862:3D75C2D:59B9FCEC" data-pjax-transient>
+  <meta name="request-id" content="37B8:3DE7:23CF4C9:3D756CE:59B9FCE4" data-pjax-transient>
   
 
   <meta name="selected-link" value="repo_source" data-pjax-transient>
@@ -48,7 +48,7 @@
 <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
     <meta name="google-analytics" content="UA-3769691-2">
 
-<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url" /><meta content="37B8:3DE7:23CF862:3D75C2D:59B9FCEC" name="octolytics-dimension-request_id" /><meta content="iad" name="octolytics-dimension-region_edge" /><meta content="iad" name="octolytics-dimension-region_render" /><meta content="26240926" name="octolytics-actor-id" /><meta content="aniket-sarkar-tcs" name="octolytics-actor-login" /><meta content="361c3134f9ac39abcd1cb782f14b05a96ca9f0ceb0c56a632a3f44f059183427" name="octolytics-actor-hash" />
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url" /><meta content="37B8:3DE7:23CF4C9:3D756CE:59B9FCE4" name="octolytics-dimension-request_id" /><meta content="iad" name="octolytics-dimension-region_edge" /><meta content="iad" name="octolytics-dimension-region_render" /><meta content="26240926" name="octolytics-actor-id" /><meta content="aniket-sarkar-tcs" name="octolytics-actor-login" /><meta content="361c3134f9ac39abcd1cb782f14b05a96ca9f0ceb0c56a632a3f44f059183427" name="octolytics-actor-hash" />
 <meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" name="analytics-location" />
 
 
@@ -63,7 +63,7 @@
   <meta name="user-login" content="aniket-sarkar-tcs">
 
       <meta name="expected-hostname" content="github.com">
-    <meta name="js-proxy-site-detection-payload" content="MzU0ODBjYzAxNjE3YTBkNGZmNjc5YWZmZTk4ODczNzdiNGJhNWRjY2E4MjdkNDliMTBjNWY3ZTZjZDIzYTc4M3x7InJlbW90ZV9hZGRyZXNzIjoiMjAyLjE0Mi42OS45NyIsInJlcXVlc3RfaWQiOiIzN0I4OjNERTc6MjNDRjg2MjozRDc1QzJEOjU5QjlGQ0VDIiwidGltZXN0YW1wIjoxNTA1MzYxMTM4LCJob3N0IjoiZ2l0aHViLmNvbSJ9">
+    <meta name="js-proxy-site-detection-payload" content="NDE3MWMwOGNjMGI0ZDEyMGYyNjk1Y2NiZGE0NDgyNDQ2Y2FkZmZjM2Q3NzEzOTlhN2M5ZmM0NmQ2ODY1NzZlNXx7InJlbW90ZV9hZGRyZXNzIjoiMjAyLjE0Mi42OS45NyIsInJlcXVlc3RfaWQiOiIzN0I4OjNERTc6MjNDRjRDOTozRDc1NkNFOjU5QjlGQ0U0IiwidGltZXN0YW1wIjoxNTA1MzYxMTI4LCJob3N0IjoiZ2l0aHViLmNvbSJ9">
 
     <meta name="enabled-features" content="UNIVERSE_BANNER">
 
@@ -80,7 +80,7 @@
   <meta content="4143686" name="octolytics-dimension-user_id" /><meta content="dchen71" name="octolytics-dimension-user_login" /><meta content="27462223" name="octolytics-dimension-repository_id" /><meta content="dchen71/datasciencecoursera" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="27462223" name="octolytics-dimension-repository_network_root_id" /><meta content="dchen71/datasciencecoursera" name="octolytics-dimension-repository_network_root_nwo" /><meta content="false" name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" />
 
 
-    <link rel="canonical" href="https://github.com/dchen71/datasciencecoursera/blob/master/Reproducible%20Research/Project%201/PA1_template.Rmd" data-pjax-transient>
+    <link rel="canonical" href="https://github.com/dchen71/datasciencecoursera/blob/master/Reproducible%20Research/Project%201/PA1_template.md" data-pjax-transient>
 
 
   <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
@@ -127,7 +127,7 @@
               <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
   <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/dchen71/datasciencecoursera/search" class="js-site-search-form" data-scoped-search-url="/dchen71/datasciencecoursera/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
     <label class="form-control header-search-wrapper js-chromeless-input-container">
-        <a href="/dchen71/datasciencecoursera/blob/master/Reproducible%20Research/Project%201/PA1_template.Rmd" class="header-search-scope no-underline">This repository</a>
+        <a href="/dchen71/datasciencecoursera/blob/master/Reproducible%20Research/Project%201/PA1_template.md" class="header-search-scope no-underline">This repository</a>
       <input type="text"
         class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable"
         data-hotkey="s"
@@ -250,7 +250,7 @@
           Settings
         </a></li>
 
-        <li><!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="logout-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="o2wbaU3E4JSowSXPZl9pwR17vTCL9hBjQG+QsI12S6wshiA7zmRvIeGR1g54kjuSLkzh6mHFGoIbklcYnBIDTg==" /></div>
+        <li><!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="logout-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="7iui4MLuXyfnHlNHAJEfyr2CLq77siFQbknEyVd1+h9hwZmyQU7Qkq5OoIYeXE2ZjrVydBGBK7E1tANhRhGy/Q==" /></div>
           <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
             Sign out
           </button>
@@ -261,7 +261,7 @@
 </ul>
 
 
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="sr-only right-0" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="SfyTOY/vFbxfC7l6dEpQISvbovuRRnAwpy/7dOJgWm7GFqhrDE+aCRZbSrtqhwJyGOz+IXt1etH80jzc8wQSjA==" /></div>
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="sr-only right-0" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="PBci9AepTdKysQIVFy3k2dCXD/xuvGuQ5mZOvlDLNDuz/RmmhAnCZ/vh8dQJ4LaK46BTJoSPYXG9m4kWQa982Q==" /></div>
           <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
             Sign out
           </button>
@@ -296,7 +296,7 @@
 
         <ul class="pagehead-actions">
   <li>
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="xUp5G1Tgv7e1R/WcsZK3BjRv1mbHoWOqv+4mXPcSXNcWehvEYtamYzlsZbLyFlmKzPhdkNh2kEdQrWsW5153Ag==" /></div>      <input class="form-control" id="repository_id" name="repository_id" type="hidden" value="27462223" />
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="jecOXebcVFuxOMIvJpTo6ieslTNQms7/P3ou3/m/ZZBe12yC0OpNjz0TUgFlEAZm3zsexU9NPRLQOWOV6fNORQ==" /></div>      <input class="form-control" id="repository_id" name="repository_id" type="hidden" value="27462223" />
 
         <div class="select-menu js-menu-container js-select-menu">
           <a href="/dchen71/datasciencecoursera/subscription"
@@ -376,7 +376,7 @@
   <li>
     
   <div class="js-toggler-container js-social-container starring-container ">
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/dchen71/datasciencecoursera/unstar" class="starred" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="aUj00uwJ/HJ38GTR13PBcE37xImoHEXxos2Ya+kkGXu1SZVJrP+Adl8XrodY3HI1sHfEMXUJGe4LmSzUMysiEQ==" /></div>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/dchen71/datasciencecoursera/unstar" class="starred" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="CMoo/IYFKPt+O4BArEpupkp4BWOI+ezAugoKLctEifnUy0lnxvNU/1bcShYj5d3jt/QF21XssN8TXr6SEUuykw==" /></div>
       <button
         type="submit"
         class="btn btn-sm btn-with-count js-toggler-target"
@@ -390,7 +390,7 @@
           0
         </a>
 </form>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/dchen71/datasciencecoursera/star" class="unstarred" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="1NYOYG+kfqbBg2+dDkOeqJhlupuiqR6nCl5hWWsB7OyeRrp5Xqfp3Aj+CNB8uhkjEO7gEeviyaNqptD/DK1ttA==" /></div>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/dchen71/datasciencecoursera/star" class="unstarred" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="27K0v5ipWyM6wgId8yMmVe2IoedAhI0D3mEbuIK82X6RIgCmqarMWfO/ZVCB2qHeZQP7bQnPWge+maoe5RBYJg==" /></div>
       <button
         type="submit"
         class="btn btn-sm btn-with-count js-toggler-target"
@@ -408,7 +408,7 @@
   </li>
 
   <li>
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/dchen71/datasciencecoursera/fork" class="btn-with-count" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="i0WWwXMfx9FhVLIgRth3j7ORZk6qv0ZJatTicuuEDSD/EFDZ4OpUZxzTuvHb7M8WxRxveAGirnE/j277kMFCpw==" /></div>
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/dchen71/datasciencecoursera/fork" class="btn-with-count" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="QUqyUOVQo0nYurRSE9EiNk1pQCxMQisc3ZdRMdLrCOA1H3RIdqUw/6U9vIOO5ZqvO+RJGudfwySIzN24qa5HZw==" /></div>
             <button
                 type="submit"
                 class="btn btn-sm btn-with-count"
@@ -503,9 +503,9 @@
   <div class="repository-content">
 
     
-  <a href="/dchen71/datasciencecoursera/blob/57a2cce507850965661ddbd2a61c7c64a989e5c6/Reproducible%20Research/Project%201/PA1_template.Rmd" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
+  <a href="/dchen71/datasciencecoursera/blob/57a2cce507850965661ddbd2a61c7c64a989e5c6/Reproducible%20Research/Project%201/PA1_template.md" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
 
-  <!-- blob contrib key: blob_contributors:v21:2a9322bd482f18fe4c513db241e6aaec -->
+  <!-- blob contrib key: blob_contributors:v21:6d5973fbcd841018394d518634932549 -->
 
   <div class="file-navigation js-zeroclipboard-container">
     
@@ -547,7 +547,7 @@
 
 
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/dchen71/datasciencecoursera/blob/gh-pages/Reproducible%20Research/Project%201/PA1_template.Rmd"
+               href="/dchen71/datasciencecoursera/blob/gh-pages/Reproducible%20Research/Project%201/PA1_template.md"
                data-name="gh-pages"
                data-skip-pjax="true"
                rel="nofollow">
@@ -557,7 +557,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open selected"
-               href="/dchen71/datasciencecoursera/blob/master/Reproducible%20Research/Project%201/PA1_template.Rmd"
+               href="/dchen71/datasciencecoursera/blob/master/Reproducible%20Research/Project%201/PA1_template.md"
                data-name="master"
                data-skip-pjax="true"
                rel="nofollow">
@@ -594,7 +594,7 @@
       <button aria-label="Copy file path to clipboard" class="js-zeroclipboard btn btn-sm BtnGroup-item tooltipped tooltipped-s" data-copied-hint="Copied!" type="button">Copy path</button>
     </div>
     <div class="breadcrumb js-zeroclipboard-target">
-      <span class="repo-root js-repo-root"><span class="js-path-segment"><a href="/dchen71/datasciencecoursera"><span>datasciencecoursera</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a href="/dchen71/datasciencecoursera/tree/master/Reproducible%20Research"><span>Reproducible Research</span></a></span><span class="separator">/</span><span class="js-path-segment"><a href="/dchen71/datasciencecoursera/tree/master/Reproducible%20Research/Project%201"><span>Project 1</span></a></span><span class="separator">/</span><strong class="final-path">PA1_template.Rmd</strong>
+      <span class="repo-root js-repo-root"><span class="js-path-segment"><a href="/dchen71/datasciencecoursera"><span>datasciencecoursera</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a href="/dchen71/datasciencecoursera/tree/master/Reproducible%20Research"><span>Reproducible Research</span></a></span><span class="separator">/</span><span class="js-path-segment"><a href="/dchen71/datasciencecoursera/tree/master/Reproducible%20Research/Project%201"><span>Project 1</span></a></span><span class="separator">/</span><strong class="final-path">PA1_template.md</strong>
     </div>
   </div>
 
@@ -638,24 +638,24 @@
   <div class="file-actions">
 
     <div class="BtnGroup">
-      <a href="/dchen71/datasciencecoursera/raw/master/Reproducible%20Research/Project%201/PA1_template.Rmd" class="btn btn-sm BtnGroup-item" id="raw-url">Raw</a>
-        <a href="/dchen71/datasciencecoursera/blame/master/Reproducible%20Research/Project%201/PA1_template.Rmd" class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b">Blame</a>
-      <a href="/dchen71/datasciencecoursera/commits/master/Reproducible%20Research/Project%201/PA1_template.Rmd" class="btn btn-sm BtnGroup-item" rel="nofollow">History</a>
+      <a href="/dchen71/datasciencecoursera/raw/master/Reproducible%20Research/Project%201/PA1_template.md" class="btn btn-sm BtnGroup-item" id="raw-url">Raw</a>
+        <a href="/dchen71/datasciencecoursera/blame/master/Reproducible%20Research/Project%201/PA1_template.md" class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b">Blame</a>
+      <a href="/dchen71/datasciencecoursera/commits/master/Reproducible%20Research/Project%201/PA1_template.md" class="btn btn-sm BtnGroup-item" rel="nofollow">History</a>
     </div>
 
         <a class="btn-octicon tooltipped tooltipped-nw"
-           href="github-windows://openRepo/https://github.com/dchen71/datasciencecoursera?branch=master&amp;filepath=Reproducible%20Research%2FProject%201%2FPA1_template.Rmd"
+           href="github-windows://openRepo/https://github.com/dchen71/datasciencecoursera?branch=master&amp;filepath=Reproducible%20Research%2FProject%201%2FPA1_template.md"
            aria-label="Open this file in GitHub Desktop"
            data-ga-click="Repository, open with desktop, type:windows">
             <svg aria-hidden="true" class="octicon octicon-device-desktop" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
         </a>
 
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/dchen71/datasciencecoursera/edit/master/Reproducible%20Research/Project%201/PA1_template.Rmd" class="inline-form js-update-url-with-hash" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="smvBcloYPOeuWxvxJt4REWe70WeE3REhiRsyqpx4JFgdFWPKbCpBJ2tbGPboFWpNjCOgoDumgzCY8qF38wkD+g==" /></div>
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/dchen71/datasciencecoursera/edit/master/Reproducible%20Research/Project%201/PA1_template.md" class="inline-form js-update-url-with-hash" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="slLBQJ1tTcHIiWw3Jhg4tDwEDz/KlLmQLtqb1c1OBhuwG7zok+97xewjwFENaMmvEvZeVEGO+LMJXMs2v457FA==" /></div>
           <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
             aria-label="Fork this project and edit the file" data-hotkey="e" data-disable-with>
             <svg aria-hidden="true" class="octicon octicon-pencil" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
           </button>
-</form>        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/dchen71/datasciencecoursera/delete/master/Reproducible%20Research/Project%201/PA1_template.Rmd" class="inline-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="eCV3VCU3zAPgppPGIt+dGANJrdaRxw5CCqzOiJEZSYC7/A/EfmNQN1KG6LyazLzSqvK02VTdpfbH7paeDdy6YA==" /></div>
+</form>        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/dchen71/datasciencecoursera/delete/master/Reproducible%20Research/Project%201/PA1_template.md" class="inline-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="5177GYdMsgP4wCDW1kZtIG/MfXK45POr9MEmmySWDEhm93DORpH1nSlnJZyrEk1b5MNWiP43wVjjxPtnpEEOqA==" /></div>
           <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
             aria-label="Fork this project and delete the file" data-disable-with>
             <svg aria-hidden="true" class="octicon octicon-trashcan" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
@@ -663,9 +663,9 @@
 </form>  </div>
 
   <div class="file-info">
-      148 lines (120 sloc)
+      259 lines (215 sloc)
       <span class="file-info-divider"></span>
-    5.28 KB
+    11 KB
   </div>
 </div>
 
@@ -693,115 +693,195 @@
 <p>This assignment makes use of data from a personal activity monitoring device. This device collects data at 5 minute intervals through out the day. The data consists of two months of data from an anonymous individual collected during the months of October and November, 2012 and include the number of steps taken in 5 minute intervals each day.</p>
 <p>###Loading and preprocessing the data
 This part of the code is necessary for the inital loading of the dataset</p>
-<pre lang="{r}"><code>    #Reads the data
-    data = read.csv('activity.csv')
-    data$date = as.Date(data$date, "%Y-%m-%d")
-    #Splits the data per date
-    splitDay = split(data, data$date)
-</code></pre>
+<div class="highlight highlight-source-r"><pre>    <span class="pl-c"><span class="pl-c">#</span>Reads the data</span>
+    <span class="pl-v">data</span> <span class="pl-k">=</span> read.csv(<span class="pl-s"><span class="pl-pds">'</span>activity.csv<span class="pl-pds">'</span></span>)
+    <span class="pl-smi">data</span><span class="pl-k">$</span><span class="pl-v">date</span> <span class="pl-k">=</span> as.Date(<span class="pl-smi">data</span><span class="pl-k">$</span><span class="pl-smi">date</span>, <span class="pl-s"><span class="pl-pds">"</span>%Y-%m-%d<span class="pl-pds">"</span></span>)
+    <span class="pl-c"><span class="pl-c">#</span>Splits the data per date</span>
+    <span class="pl-v">splitDay</span> <span class="pl-k">=</span> split(<span class="pl-smi">data</span>, <span class="pl-smi">data</span><span class="pl-k">$</span><span class="pl-smi">date</span>)</pre></div>
 <p>###What is mean total number of steps taken per day?</p>
-<pre lang="{r}"><code>    #Total number of steps/Median per day
-    totalSteps = sapply(splitDay, function(x) sum(x$steps))
-    medianSteps = sapply(splitDay, function(x) median(x$steps))
-    hist(totalSteps,main="Histogram of Frequency of TotalSteps/Day")
-</code></pre>
+<div class="highlight highlight-source-r"><pre>    <span class="pl-c"><span class="pl-c">#</span>Total number of steps/Median per day</span>
+    <span class="pl-v">totalSteps</span> <span class="pl-k">=</span> sapply(<span class="pl-smi">splitDay</span>, <span class="pl-k">function</span>(<span class="pl-smi">x</span>) sum(<span class="pl-smi">x</span><span class="pl-k">$</span><span class="pl-smi">steps</span>))
+    <span class="pl-v">medianSteps</span> <span class="pl-k">=</span> sapply(<span class="pl-smi">splitDay</span>, <span class="pl-k">function</span>(<span class="pl-smi">x</span>) median(<span class="pl-smi">x</span><span class="pl-k">$</span><span class="pl-smi">steps</span>))
+    hist(<span class="pl-smi">totalSteps</span>,<span class="pl-v">main</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Histogram of Frequency of TotalSteps/Day<span class="pl-pds">"</span></span>)</pre></div>
+<p><a href="/dchen71/datasciencecoursera/blob/master/Reproducible%20Research/Project%201/figure/unnamed-chunk-2-1.png" target="_blank"><img src="/dchen71/datasciencecoursera/raw/master/Reproducible%20Research/Project%201/figure/unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2" style="max-width:100%;"></a></p>
 <p>Total number of steps/day</p>
-<pre lang="{r,"><code>    totalSteps
-
+<pre><code>## 2012-10-01 2012-10-02 2012-10-03 2012-10-04 2012-10-05 2012-10-06 
+##         NA        126      11352      12116      13294      15420 
+## 2012-10-07 2012-10-08 2012-10-09 2012-10-10 2012-10-11 2012-10-12 
+##      11015         NA      12811       9900      10304      17382 
+## 2012-10-13 2012-10-14 2012-10-15 2012-10-16 2012-10-17 2012-10-18 
+##      12426      15098      10139      15084      13452      10056 
+## 2012-10-19 2012-10-20 2012-10-21 2012-10-22 2012-10-23 2012-10-24 
+##      11829      10395       8821      13460       8918       8355 
+## 2012-10-25 2012-10-26 2012-10-27 2012-10-28 2012-10-29 2012-10-30 
+##       2492       6778      10119      11458       5018       9819 
+## 2012-10-31 2012-11-01 2012-11-02 2012-11-03 2012-11-04 2012-11-05 
+##      15414         NA      10600      10571         NA      10439 
+## 2012-11-06 2012-11-07 2012-11-08 2012-11-09 2012-11-10 2012-11-11 
+##       8334      12883       3219         NA         NA      12608 
+## 2012-11-12 2012-11-13 2012-11-14 2012-11-15 2012-11-16 2012-11-17 
+##      10765       7336         NA         41       5441      14339 
+## 2012-11-18 2012-11-19 2012-11-20 2012-11-21 2012-11-22 2012-11-23 
+##      15110       8841       4472      12787      20427      21194 
+## 2012-11-24 2012-11-25 2012-11-26 2012-11-27 2012-11-28 2012-11-29 
+##      14478      11834      11162      13646      10183       7047 
+## 2012-11-30 
+##         NA
 </code></pre>
 <p>Median number of steps/day</p>
-<pre lang="{r,"><code>
-    medianSteps
+<pre><code>## 2012-10-01 2012-10-02 2012-10-03 2012-10-04 2012-10-05 2012-10-06 
+##         NA          0          0          0          0          0 
+## 2012-10-07 2012-10-08 2012-10-09 2012-10-10 2012-10-11 2012-10-12 
+##          0         NA          0          0          0          0 
+## 2012-10-13 2012-10-14 2012-10-15 2012-10-16 2012-10-17 2012-10-18 
+##          0          0          0          0          0          0 
+## 2012-10-19 2012-10-20 2012-10-21 2012-10-22 2012-10-23 2012-10-24 
+##          0          0          0          0          0          0 
+## 2012-10-25 2012-10-26 2012-10-27 2012-10-28 2012-10-29 2012-10-30 
+##          0          0          0          0          0          0 
+## 2012-10-31 2012-11-01 2012-11-02 2012-11-03 2012-11-04 2012-11-05 
+##          0         NA          0          0         NA          0 
+## 2012-11-06 2012-11-07 2012-11-08 2012-11-09 2012-11-10 2012-11-11 
+##          0          0          0         NA         NA          0 
+## 2012-11-12 2012-11-13 2012-11-14 2012-11-15 2012-11-16 2012-11-17 
+##          0          0         NA          0          0          0 
+## 2012-11-18 2012-11-19 2012-11-20 2012-11-21 2012-11-22 2012-11-23 
+##          0          0          0          0          0          0 
+## 2012-11-24 2012-11-25 2012-11-26 2012-11-27 2012-11-28 2012-11-29 
+##          0          0          0          0          0          0 
+## 2012-11-30 
+##         NA
 </code></pre>
 <p>###What is the average daily activity pattern?
 The code initializes the dataset and creates a plot to find the average steps vs time interval</p>
-<pre lang="{r}"><code>    #Preallocate vector
-    interval = seq(0,2355,5)
-    steps = numeric()
-    for(i in 1:472) {
-        steps[i] = 0
+<div class="highlight highlight-source-r"><pre>    <span class="pl-c"><span class="pl-c">#</span>Preallocate vector</span>
+    <span class="pl-v">interval</span> <span class="pl-k">=</span> seq(<span class="pl-c1">0</span>,<span class="pl-c1">2355</span>,<span class="pl-c1">5</span>)
+    <span class="pl-v">steps</span> <span class="pl-k">=</span> <span class="pl-k">numeric</span>()
+    <span class="pl-k">for</span>(<span class="pl-smi">i</span> <span class="pl-k">in</span> <span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">472</span>) {
+        <span class="pl-smi">steps</span>[<span class="pl-smi">i</span>] <span class="pl-k">=</span> <span class="pl-c1">0</span>
     }
-    avgSteps = data.frame(interval, steps)
-    names(avgSteps) = c('interval','avgsteps')
+    <span class="pl-v">avgSteps</span> <span class="pl-k">=</span> <span class="pl-k">data.frame</span>(<span class="pl-smi">interval</span>, <span class="pl-smi">steps</span>)
+    names(<span class="pl-smi">avgSteps</span>) <span class="pl-k">=</span> c(<span class="pl-s"><span class="pl-pds">'</span>interval<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>avgsteps<span class="pl-pds">'</span></span>)
     
-    #Adds the mean data in for the 5 minute interval
-    for (i in 1:472){
-        avgSteps$avgsteps[i] = mean(data$steps[data$interval == interval[i]], na.rm=TRUE)
+    <span class="pl-c"><span class="pl-c">#</span>Adds the mean data in for the 5 minute interval</span>
+    <span class="pl-k">for</span> (<span class="pl-smi">i</span> <span class="pl-k">in</span> <span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">472</span>){
+        <span class="pl-smi">avgSteps</span><span class="pl-k">$</span><span class="pl-smi">avgsteps</span>[<span class="pl-smi">i</span>] <span class="pl-k">=</span> mean(<span class="pl-smi">data</span><span class="pl-k">$</span><span class="pl-smi">steps</span>[<span class="pl-smi">data</span><span class="pl-k">$</span><span class="pl-smi">interval</span> <span class="pl-k">==</span> <span class="pl-smi">interval</span>[<span class="pl-smi">i</span>]], <span class="pl-v">na.rm</span><span class="pl-k">=</span><span class="pl-c1">TRUE</span>)
     }
     
-    #Plots the avgsteps vs time interval
-    plot(avgSteps, type='l', main='Avg. Steps over 5 minute intervals',xlab='Interval(minutes)',
-         ylab='Average Steps')
-    
-    #Finds the interval with the highest avg
-    avgSteps$interval[which.max(avgSteps$avgsteps)]
+    <span class="pl-c"><span class="pl-c">#</span>Plots the avgsteps vs time interval</span>
+    plot(<span class="pl-smi">avgSteps</span>, <span class="pl-v">type</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>l<span class="pl-pds">'</span></span>, <span class="pl-v">main</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>Avg. Steps over 5 minute intervals<span class="pl-pds">'</span></span>,<span class="pl-v">xlab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>Interval(minutes)<span class="pl-pds">'</span></span>,
+         <span class="pl-v">ylab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>Average Steps<span class="pl-pds">'</span></span>)</pre></div>
+<p><a href="/dchen71/datasciencecoursera/blob/master/Reproducible%20Research/Project%201/figure/unnamed-chunk-5-1.png" target="_blank"><img src="/dchen71/datasciencecoursera/raw/master/Reproducible%20Research/Project%201/figure/unnamed-chunk-5-1.png" alt="plot of chunk unnamed-chunk-5" style="max-width:100%;"></a></p>
+<div class="highlight highlight-source-r"><pre>    <span class="pl-c"><span class="pl-c">#</span>Finds the interval with the highest avg</span>
+    <span class="pl-smi">avgSteps</span><span class="pl-k">$</span><span class="pl-smi">interval</span>[which.max(<span class="pl-smi">avgSteps</span><span class="pl-k">$</span><span class="pl-smi">avgsteps</span>)]</pre></div>
+<pre><code>## [1] 835
 </code></pre>
-<p>The interval with the highest average is <code>r avgSteps$interval[which.max(avgSteps$avgsteps)]</code></p>
+<p>The interval with the highest average is 835</p>
 <p>##Imputing missing values</p>
-<pre lang="{r}"><code>    #Counts number of na values in steps
-    numNa = sum(is.na(data$steps))
-</code></pre>
-<p>The number of NA values in the dataset is <code>r numNa</code></p>
+<div class="highlight highlight-source-r"><pre>    <span class="pl-c"><span class="pl-c">#</span>Counts number of na values in steps</span>
+    <span class="pl-v">numNa</span> <span class="pl-k">=</span> sum(is.na(<span class="pl-smi">data</span><span class="pl-k">$</span><span class="pl-smi">steps</span>))</pre></div>
+<p>The number of NA values in the dataset is 2304</p>
 <p>All NA values will be replaced with 0</p>
-<pre lang="{r}"><code>    #Replaces NA with 0
-    noNa = data
-    noNa[is.na(noNa)]=0
-    #Splits the data per date
-    splitNa = split(noNa, noNa$date)
-    #Average steps/median
-    totalNa = sapply(splitNa, function(x) sum(x$steps))
-    #Plots histogram of the number of total steps per day
-    hist(totalNa,main="Histogram of Frequency of TotalSteps/Day", xlab="Total number of Steps")
-    #Average/mean across all values
-    avgNa = sapply(splitNa, function(x) mean(x$steps))
-    medNa = sapply(splitNa, function(x) median(x$steps))
-</code></pre>
+<div class="highlight highlight-source-r"><pre>    <span class="pl-c"><span class="pl-c">#</span>Replaces NA with 0</span>
+    <span class="pl-v">noNa</span> <span class="pl-k">=</span> <span class="pl-smi">data</span>
+    <span class="pl-smi">noNa</span>[is.na(<span class="pl-smi">noNa</span>)]<span class="pl-k">=</span><span class="pl-c1">0</span>
+    <span class="pl-c"><span class="pl-c">#</span>Splits the data per date</span>
+    <span class="pl-v">splitNa</span> <span class="pl-k">=</span> split(<span class="pl-smi">noNa</span>, <span class="pl-smi">noNa</span><span class="pl-k">$</span><span class="pl-smi">date</span>)
+    <span class="pl-c"><span class="pl-c">#</span>Average steps/median</span>
+    <span class="pl-v">totalNa</span> <span class="pl-k">=</span> sapply(<span class="pl-smi">splitNa</span>, <span class="pl-k">function</span>(<span class="pl-smi">x</span>) sum(<span class="pl-smi">x</span><span class="pl-k">$</span><span class="pl-smi">steps</span>))
+    <span class="pl-c"><span class="pl-c">#</span>Plots histogram of the number of total steps per day</span>
+    hist(<span class="pl-smi">totalNa</span>,<span class="pl-v">main</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Histogram of Frequency of TotalSteps/Day<span class="pl-pds">"</span></span>, <span class="pl-v">xlab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Total number of Steps<span class="pl-pds">"</span></span>)</pre></div>
+<p><a href="/dchen71/datasciencecoursera/blob/master/Reproducible%20Research/Project%201/figure/unnamed-chunk-7-1.png" target="_blank"><img src="/dchen71/datasciencecoursera/raw/master/Reproducible%20Research/Project%201/figure/unnamed-chunk-7-1.png" alt="plot of chunk unnamed-chunk-7" style="max-width:100%;"></a></p>
+<div class="highlight highlight-source-r"><pre>    <span class="pl-c"><span class="pl-c">#</span>Average/mean across all values</span>
+    <span class="pl-v">avgNa</span> <span class="pl-k">=</span> sapply(<span class="pl-smi">splitNa</span>, <span class="pl-k">function</span>(<span class="pl-smi">x</span>) mean(<span class="pl-smi">x</span><span class="pl-k">$</span><span class="pl-smi">steps</span>))
+    <span class="pl-v">medNa</span> <span class="pl-k">=</span> sapply(<span class="pl-smi">splitNa</span>, <span class="pl-k">function</span>(<span class="pl-smi">x</span>) median(<span class="pl-smi">x</span><span class="pl-k">$</span><span class="pl-smi">steps</span>))</pre></div>
 <p>The following is the adjusted average values after changing all NA values to 0</p>
-<pre lang="{r,"><code>    avgNa
+<pre><code>## 2012-10-01 2012-10-02 2012-10-03 2012-10-04 2012-10-05 2012-10-06 
+##  0.0000000  0.4375000 39.4166667 42.0694444 46.1597222 53.5416667 
+## 2012-10-07 2012-10-08 2012-10-09 2012-10-10 2012-10-11 2012-10-12 
+## 38.2465278  0.0000000 44.4826389 34.3750000 35.7777778 60.3541667 
+## 2012-10-13 2012-10-14 2012-10-15 2012-10-16 2012-10-17 2012-10-18 
+## 43.1458333 52.4236111 35.2048611 52.3750000 46.7083333 34.9166667 
+## 2012-10-19 2012-10-20 2012-10-21 2012-10-22 2012-10-23 2012-10-24 
+## 41.0729167 36.0937500 30.6284722 46.7361111 30.9652778 29.0104167 
+## 2012-10-25 2012-10-26 2012-10-27 2012-10-28 2012-10-29 2012-10-30 
+##  8.6527778 23.5347222 35.1354167 39.7847222 17.4236111 34.0937500 
+## 2012-10-31 2012-11-01 2012-11-02 2012-11-03 2012-11-04 2012-11-05 
+## 53.5208333  0.0000000 36.8055556 36.7048611  0.0000000 36.2465278 
+## 2012-11-06 2012-11-07 2012-11-08 2012-11-09 2012-11-10 2012-11-11 
+## 28.9375000 44.7326389 11.1770833  0.0000000  0.0000000 43.7777778 
+## 2012-11-12 2012-11-13 2012-11-14 2012-11-15 2012-11-16 2012-11-17 
+## 37.3784722 25.4722222  0.0000000  0.1423611 18.8923611 49.7881944 
+## 2012-11-18 2012-11-19 2012-11-20 2012-11-21 2012-11-22 2012-11-23 
+## 52.4652778 30.6979167 15.5277778 44.3993056 70.9270833 73.5902778 
+## 2012-11-24 2012-11-25 2012-11-26 2012-11-27 2012-11-28 2012-11-29 
+## 50.2708333 41.0902778 38.7569444 47.3819444 35.3576389 24.4687500 
+## 2012-11-30 
+##  0.0000000
 </code></pre>
 <p>The following is the adjusted median values after chaning all NA values to 0</p>
-<pre lang="{r,"><code>    medNa
+<pre><code>## 2012-10-01 2012-10-02 2012-10-03 2012-10-04 2012-10-05 2012-10-06 
+##          0          0          0          0          0          0 
+## 2012-10-07 2012-10-08 2012-10-09 2012-10-10 2012-10-11 2012-10-12 
+##          0          0          0          0          0          0 
+## 2012-10-13 2012-10-14 2012-10-15 2012-10-16 2012-10-17 2012-10-18 
+##          0          0          0          0          0          0 
+## 2012-10-19 2012-10-20 2012-10-21 2012-10-22 2012-10-23 2012-10-24 
+##          0          0          0          0          0          0 
+## 2012-10-25 2012-10-26 2012-10-27 2012-10-28 2012-10-29 2012-10-30 
+##          0          0          0          0          0          0 
+## 2012-10-31 2012-11-01 2012-11-02 2012-11-03 2012-11-04 2012-11-05 
+##          0          0          0          0          0          0 
+## 2012-11-06 2012-11-07 2012-11-08 2012-11-09 2012-11-10 2012-11-11 
+##          0          0          0          0          0          0 
+## 2012-11-12 2012-11-13 2012-11-14 2012-11-15 2012-11-16 2012-11-17 
+##          0          0          0          0          0          0 
+## 2012-11-18 2012-11-19 2012-11-20 2012-11-21 2012-11-22 2012-11-23 
+##          0          0          0          0          0          0 
+## 2012-11-24 2012-11-25 2012-11-26 2012-11-27 2012-11-28 2012-11-29 
+##          0          0          0          0          0          0 
+## 2012-11-30 
+##          0
 </code></pre>
 <p>###Are there differences in activity patterns between weekdays and weekends?</p>
 <p>The following creates subsets containing the weekday/weekend values of the dataset</p>
-<pre lang="{r}"><code>    #Shows data of weekday and weekend values
-    weekData = data
-    weekData[is.na(weekData)]=0    
-    weekData$days = weekdays(weekData$date)
-    weekData$days = as.factor(ifelse(weekdays(weekData$date) %in% c("Saturday","Sunday"), 
-                                      "Weekend", "Weekday")) 
+<div class="highlight highlight-source-r"><pre>    <span class="pl-c"><span class="pl-c">#</span>Shows data of weekday and weekend values</span>
+    <span class="pl-v">weekData</span> <span class="pl-k">=</span> <span class="pl-smi">data</span>
+    <span class="pl-smi">weekData</span>[is.na(<span class="pl-smi">weekData</span>)]<span class="pl-k">=</span><span class="pl-c1">0</span>    
+    <span class="pl-smi">weekData</span><span class="pl-k">$</span><span class="pl-v">days</span> <span class="pl-k">=</span> weekdays(<span class="pl-smi">weekData</span><span class="pl-k">$</span><span class="pl-smi">date</span>)
+    <span class="pl-smi">weekData</span><span class="pl-k">$</span><span class="pl-v">days</span> <span class="pl-k">=</span> as.factor(ifelse(weekdays(<span class="pl-smi">weekData</span><span class="pl-k">$</span><span class="pl-smi">date</span>) <span class="pl-k">%in%</span> c(<span class="pl-s"><span class="pl-pds">"</span>Saturday<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>Sunday<span class="pl-pds">"</span></span>), 
+                                      <span class="pl-s"><span class="pl-pds">"</span>Weekend<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>Weekday<span class="pl-pds">"</span></span>)) 
 
-    avgEnd = mean(weekData$steps[weekData$days == 'Weekend'])
-    avgDay = mean(weekData$steps[weekData$days == 'Weekday'])
+    <span class="pl-v">avgEnd</span> <span class="pl-k">=</span> mean(<span class="pl-smi">weekData</span><span class="pl-k">$</span><span class="pl-smi">steps</span>[<span class="pl-smi">weekData</span><span class="pl-k">$</span><span class="pl-smi">days</span> <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">'</span>Weekend<span class="pl-pds">'</span></span>])
+    <span class="pl-v">avgDay</span> <span class="pl-k">=</span> mean(<span class="pl-smi">weekData</span><span class="pl-k">$</span><span class="pl-smi">steps</span>[<span class="pl-smi">weekData</span><span class="pl-k">$</span><span class="pl-smi">days</span> <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">'</span>Weekday<span class="pl-pds">'</span></span>])
 
-    #Subset weekday and weekend values
-    weekdays = subset(weekData, weekData$days == 'Weekday')
-    weekends = subset(weekData, weekData$days == 'Weekend')
+    <span class="pl-c"><span class="pl-c">#</span>Subset weekday and weekend values</span>
+    <span class="pl-v">weekdays</span> <span class="pl-k">=</span> subset(<span class="pl-smi">weekData</span>, <span class="pl-smi">weekData</span><span class="pl-k">$</span><span class="pl-smi">days</span> <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">'</span>Weekday<span class="pl-pds">'</span></span>)
+    <span class="pl-v">weekends</span> <span class="pl-k">=</span> subset(<span class="pl-smi">weekData</span>, <span class="pl-smi">weekData</span><span class="pl-k">$</span><span class="pl-smi">days</span> <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">'</span>Weekend<span class="pl-pds">'</span></span>)
     
-    #Preallocate vector
-    weekend = numeric()
-    weekday = numeric()
-    for(i in 1:472) {
-        weekday[i] = 0
-        weekend[i] = 0
+    <span class="pl-c"><span class="pl-c">#</span>Preallocate vector</span>
+    <span class="pl-v">weekend</span> <span class="pl-k">=</span> <span class="pl-k">numeric</span>()
+    <span class="pl-v">weekday</span> <span class="pl-k">=</span> <span class="pl-k">numeric</span>()
+    <span class="pl-k">for</span>(<span class="pl-smi">i</span> <span class="pl-k">in</span> <span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">472</span>) {
+        <span class="pl-smi">weekday</span>[<span class="pl-smi">i</span>] <span class="pl-k">=</span> <span class="pl-c1">0</span>
+        <span class="pl-smi">weekend</span>[<span class="pl-smi">i</span>] <span class="pl-k">=</span> <span class="pl-c1">0</span>
     }
-    avgWeek = data.frame(interval, weekend, weekday)
-    names(avgWeek) = c('interval','avgsteps.weekend','avgsteps.weekday')
+    <span class="pl-v">avgWeek</span> <span class="pl-k">=</span> <span class="pl-k">data.frame</span>(<span class="pl-smi">interval</span>, <span class="pl-smi">weekend</span>, <span class="pl-smi">weekday</span>)
+    names(<span class="pl-smi">avgWeek</span>) <span class="pl-k">=</span> c(<span class="pl-s"><span class="pl-pds">'</span>interval<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>avgsteps.weekend<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>avgsteps.weekday<span class="pl-pds">'</span></span>)
     
-    #Adds the mean data in for the 5 minute interval
-    for (i in 1:472){
-        avgWeek$avgsteps.weekday[i] = mean(weekdays$steps[weekdays$interval == interval[i]], na.rm=TRUE)
-        avgWeek$avgsteps.weekend[i] = mean(weekends$steps[weekends$interval == interval[i]], na.rm=TRUE)
-    }
-</code></pre>
+    <span class="pl-c"><span class="pl-c">#</span>Adds the mean data in for the 5 minute interval</span>
+    <span class="pl-k">for</span> (<span class="pl-smi">i</span> <span class="pl-k">in</span> <span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">472</span>){
+        <span class="pl-smi">avgWeek</span><span class="pl-k">$</span><span class="pl-smi">avgsteps.weekday</span>[<span class="pl-smi">i</span>] <span class="pl-k">=</span> mean(<span class="pl-smi">weekdays</span><span class="pl-k">$</span><span class="pl-smi">steps</span>[<span class="pl-smi">weekdays</span><span class="pl-k">$</span><span class="pl-smi">interval</span> <span class="pl-k">==</span> <span class="pl-smi">interval</span>[<span class="pl-smi">i</span>]], <span class="pl-v">na.rm</span><span class="pl-k">=</span><span class="pl-c1">TRUE</span>)
+        <span class="pl-smi">avgWeek</span><span class="pl-k">$</span><span class="pl-smi">avgsteps.weekend</span>[<span class="pl-smi">i</span>] <span class="pl-k">=</span> mean(<span class="pl-smi">weekends</span><span class="pl-k">$</span><span class="pl-smi">steps</span>[<span class="pl-smi">weekends</span><span class="pl-k">$</span><span class="pl-smi">interval</span> <span class="pl-k">==</span> <span class="pl-smi">interval</span>[<span class="pl-smi">i</span>]], <span class="pl-v">na.rm</span><span class="pl-k">=</span><span class="pl-c1">TRUE</span>)
+    }</pre></div>
 <p>The plot is setup to show the differences in the average steps vs time period between weekends and weekdays</p>
-<pre lang="{r}"><code>    #Creates the plots
-    par(mfrow=c(2,1))
-    plot(avgWeek$interval, avgWeek$avgsteps.weekend, type='l', main ="Weekend vs Avg Steps",
-         xlab="Interval(steps)", ylab="Average Steps")
-    plot(avgWeek$interval, avgWeek$avgsteps.weekday, main ="Weekday vs Avg Steps", 
-         xlab="Interval(steps)", ylab="Average Steps", type='l')
-</code></pre>
+<div class="highlight highlight-source-r"><pre>    <span class="pl-c"><span class="pl-c">#</span>Creates the plots</span>
+    par(<span class="pl-v">mfrow</span><span class="pl-k">=</span>c(<span class="pl-c1">2</span>,<span class="pl-c1">1</span>))
+    plot(<span class="pl-smi">avgWeek</span><span class="pl-k">$</span><span class="pl-smi">interval</span>, <span class="pl-smi">avgWeek</span><span class="pl-k">$</span><span class="pl-smi">avgsteps.weekend</span>, <span class="pl-v">type</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>l<span class="pl-pds">'</span></span>, <span class="pl-v">main</span> <span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Weekend vs Avg Steps<span class="pl-pds">"</span></span>,
+         <span class="pl-v">xlab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Interval(steps)<span class="pl-pds">"</span></span>, <span class="pl-v">ylab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Average Steps<span class="pl-pds">"</span></span>)
+    plot(<span class="pl-smi">avgWeek</span><span class="pl-k">$</span><span class="pl-smi">interval</span>, <span class="pl-smi">avgWeek</span><span class="pl-k">$</span><span class="pl-smi">avgsteps.weekday</span>, <span class="pl-v">main</span> <span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Weekday vs Avg Steps<span class="pl-pds">"</span></span>, 
+         <span class="pl-v">xlab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Interval(steps)<span class="pl-pds">"</span></span>, <span class="pl-v">ylab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Average Steps<span class="pl-pds">"</span></span>, <span class="pl-v">type</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>l<span class="pl-pds">'</span></span>)</pre></div>
+<p><a href="/dchen71/datasciencecoursera/blob/master/Reproducible%20Research/Project%201/figure/unnamed-chunk-11-1.png" target="_blank"><img src="/dchen71/datasciencecoursera/raw/master/Reproducible%20Research/Project%201/figure/unnamed-chunk-11-1.png" alt="plot of chunk unnamed-chunk-11" style="max-width:100%;"></a></p>
 </article>
   </div>
 
@@ -827,7 +907,7 @@ The code initializes the dataset and creates a plot to find the average steps vs
 <div class="footer container-lg px-3" role="contentinfo">
   <div class="position-relative d-flex flex-justify-between py-6 mt-6 f6 text-gray border-top border-gray-light ">
     <ul class="list-style-none d-flex flex-wrap ">
-      <li class="mr-3">&copy; 2017 <span title="0.18152s from unicorn-2162599231-nc3g0">GitHub</span>, Inc.</li>
+      <li class="mr-3">&copy; 2017 <span title="0.15075s from unicorn-989893024-wpwrr">GitHub</span>, Inc.</li>
         <li class="mr-3"><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
         <li class="mr-3"><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
         <li class="mr-3"><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
